@@ -37,7 +37,7 @@ class ColorHandlerNightLight : public ColorHandler {
     // Based on measurements using the original device firmware, so it
     // matches the night light of the original firmware.
     if (v.get_color_mode() == light::ColorMode::COLOR_TEMPERATURE) {
-      red = 0.960f;
+      red = 0.950f;
       green = 0.968f;
       blue = 0.972f;
       white = 0.0f;
