@@ -5,6 +5,8 @@ from esphome.const import CONF_ID, CONF_OUTPUT_ID
 from .. import bslamp2_ns, CODEOWNERS
 from ..light import XiaomiBslamp2LightOutput
 
+__all__ = ["CODEOWNERS"]
+
 DEPENDENCIES = ["xiaomi_bslamp2"]
 
 CONF_LIGHT_ID = "light_id"

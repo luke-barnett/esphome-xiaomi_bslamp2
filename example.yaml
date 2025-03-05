@@ -8,8 +8,13 @@
 substitutions:
   name: bedside-lamp
   friendly_name: Bedside Lamp
-  #light_name: ${friendly_name} RGBWW Light
-  #light_mode_text_sensor_name: ${friendly_name} Light Mode
+
+  # Below are some default values as provided by the core.yaml configuration
+  # package. You can uncomment these and change them if you do not like the
+  # default values.
+
+  #light_name: RGBWW Light
+  #light_mode_text_sensor_name: Light Mode
   #default_transition_length: 800ms
 
 # --------------------------------------------------------------------------
@@ -32,7 +37,7 @@ substitutions:
 packages:
   bslamp2:
     url: https://github.com/mmakaay/esphome-xiaomi_bslamp2
-    ref: 2023.4.0
+    ref: release/2025.1.0
     files:
       - packages/core.yaml
       - packages/behavior_default.yaml
@@ -53,4 +58,6 @@ api:
     key: !secret api_encryption_key
 
 ota:
+  platform: esphome
   password: !secret ota_password
+

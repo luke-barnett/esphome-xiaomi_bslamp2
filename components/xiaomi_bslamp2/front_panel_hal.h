@@ -194,7 +194,7 @@ struct FrontPanelTriggerStore {
  * will take care of actually reading and processing the event.
  */
 void IRAM_ATTR HOT FrontPanelTriggerStore::gpio_intr(FrontPanelTriggerStore *store) {
-  store->event_id++;
+  store->event_id = store->event_id + 1;
 }
 
 /**
